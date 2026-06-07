@@ -11,6 +11,7 @@ import ConversionMethods from "./pages/ConversionMethods";
 import ValidationMethods from "./pages/ValidationMethods";
 import IterationMethods from "./pages/IterationMethods";
 import HigherOrderMethods from "./pages/HigherOrderMethods";
+import AdvancedArrayMethods from "./pages/AdvancedArrayMethods";
 import ComparisonTables from "./pages/ComparisonTables";
 import InterviewQuestions from "./pages/InterviewQuestions";
 import CheatSheet from "./pages/CheatSheet";
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/validation-methods" element={<ValidationMethods />} />
           <Route path="/iteration-methods" element={<IterationMethods />} />
           <Route path="/higher-order" element={<HigherOrderMethods />} />
+          <Route path="/advanced-methods" element={<AdvancedArrayMethods />} />
           <Route path="/comparisons" element={<ComparisonTables />} />
           <Route path="/interview-questions" element={<InterviewQuestions />} />
           <Route path="/cheat-sheet" element={<CheatSheet />} />
