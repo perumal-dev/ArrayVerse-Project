@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Sidebar = ({ mobile = false }) => {
+const Sidebar = ({ mobile = false, closeMenu = () => {} }) => {
   const links = [
     { name: "Home", path: "/" },
     { name: "Introduction", path: "/introduction" },
@@ -35,8 +35,9 @@ const Sidebar = ({ mobile = false }) => {
             <li key={link.path}>
               <NavLink
                 to={link.path}
+                onClick={closeMenu}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-lg transition-all duration-300 hover:translate-x-1s ${
+                  `block px-4 py-3 rounded-lg transition-all duration-300 ${
                     isActive
                       ? "bg-blue-600 text-white"
                       : "hover:bg-blue-50 text-slate-700"

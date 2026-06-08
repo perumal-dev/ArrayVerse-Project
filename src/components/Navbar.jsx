@@ -26,7 +26,7 @@ const Navbar = () => {
               </button>
             </div>
 
-            <Sidebar mobile />
+            <Sidebar mobile closeMenu={() => setMenuOpen(false)} />
           </div>
         </div>
       )}

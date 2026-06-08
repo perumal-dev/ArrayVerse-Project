@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MainLayout from "./layouts/MainLayout";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import Introduction from "./pages/Introduction";
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <MainLayout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/introduction" element={<Introduction />} />
