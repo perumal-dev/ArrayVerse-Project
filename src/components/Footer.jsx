@@ -1,12 +1,10 @@
 const Footer = () => {
   return (
-    <footer className="ml-64 border-t bg-white py-8 mt-10">
-      <div className="text-center">
-        <h3 className="font-bold text-lg">
-          ArrayVerse
-        </h3>
+    <footer className="md:ml-64 border-t bg-white py-8 mt-10 px-4">
+      <div className="max-w-7xl mx-auto text-center">
+        <h3 className="font-bold text-lg md:text-xl">ArrayVerse</h3>
 
-        <p className="text-slate-600 mt-2">
+        <p className="text-slate-600 mt-2 text-sm md:text-base">
           Complete JavaScript Array Guide
         </p>
 
